@@ -1,33 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import hamburger from './assets/hamburger.svg'
+import cart from './assets/cart.svg'
+import fourdots from './assets/fourdots.svg'
+import search from './assets/search.svg'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='navbar'>
+        <div className='fourdots'>
+          {/* <img src={fourdots} alt='hamburger'></img> */}
+        </div>
+        <div className='office'>
+          <p>Office</p>
+        </div>
+        <div className='windows'>
+          <p>Windows</p>
+        </div>
+        <div className='support'>
+          <p>Support</p>
+        </div>
+        <div className='microsoft'>
+          <p>Microsoft 365</p>
+        </div>
+        <div className='hamburger'>
+          {/* <img src={hamburger} alt='hamburger'></img> */}
+        </div>
+        <div className='search'>
+          {/* <img src={search} alt='hamburger'></img> */}
+        </div>
+        <div className='cart'>
+          {/* <img src={cart} alt='hamburger'></img> */}
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
