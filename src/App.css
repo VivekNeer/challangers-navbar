@@ -1,7 +1,7 @@
+/* App.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 #root {
   max-width: 1280px;
@@ -22,22 +22,30 @@
   transition: top 0.3s;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
 }
 .navbar.shadow {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.text
+{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button {
   border: none;
   outline: none;
   background-color: transparent;
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
+  cursor: default;
+  padding: 0px;
+  margin: 0 30px;
   position: relative;
   overflow: hidden;
-  color: #ffffff; 
+  color: #ffffff;
+  padding-bottom: 10px;
 }
 
 @keyframes rainbow {
@@ -60,10 +68,18 @@ button:hover {
   margin: 10px;
 }
 
+img{
+  padding: 0;
+  margin: 0 30px;
+  position: relative;
+}
+
 .navbar img {
   width: 20px;
   height: 20px;
   transition: transform 0.2s ease; 
+  margin-top: auto; /* Center vertically */
+  margin-bottom: auto; /* Center vertically */
 }
 
 .navbar img:hover {
