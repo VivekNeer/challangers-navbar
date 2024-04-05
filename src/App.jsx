@@ -11,28 +11,28 @@ function App() {
     <>
       <div className='navbar'>
         <div className='fourdots'>
-          {/* <img src={fourdots} alt='hamburger'></img> */}
+          <img src={fourdots} alt='hamburger'></img>
         </div>
         <div className='office'>
-          <p>Office</p>
+          <button>Office</button>
         </div>
         <div className='windows'>
-          <p>Windows</p>
+          <button>Windows</button>
         </div>
         <div className='support'>
-          <p>Support</p>
+          <button>Support</button>
         </div>
         <div className='microsoft'>
-          <p>Microsoft 365</p>
+          <button>Microsoft 365</button>
         </div>
         <div className='hamburger'>
-          {/* <img src={hamburger} alt='hamburger'></img> */}
+          <img src={hamburger} alt='hamburger'></img>
         </div>
         <div className='search'>
-          {/* <img src={search} alt='hamburger'></img> */}
+          <img src={search} alt='hamburger'></img>
         </div>
         <div className='cart'>
-          {/* <img src={cart} alt='hamburger'></img> */}
+          <img src={cart} alt='hamburger'></img>
         </div>
       </div>
     </>
